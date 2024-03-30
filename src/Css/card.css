@@ -132,7 +132,7 @@ body{
 
 .cards .con{
     display: grid;
-    grid-template-columns: repeat(auto-fill , minmax(400px , 1fr));
+    grid-template-columns: repeat(auto-fill , minmax(300px , 1fr));
     gap: 32px;
     margin-left: 30px;
     margin-right: 30px;
@@ -245,7 +245,7 @@ body{
 /* Suitable plant page */
 
 .search{
-    width:  1350px;
+    width:  890px;
     margin-left: -22px;
     border-radius: 5px;
     margin-bottom: 60px;

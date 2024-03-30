@@ -18,7 +18,7 @@ export default function CardProduct(props) {
     const { product } = props;
     return (
         <div className="box">
-            <span style={{ marginLeft: "300px", padding: "10px", color: "#ccc" }}>{product.category}</span>
+            <span style={{ marginLeft: "200px", padding: "10px", color: "#ccc" }}>{product.category}</span>
             <div className="img-product">
                 <img src={product.image} alt="img" />
                 <div class="caption">

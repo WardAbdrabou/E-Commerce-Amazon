@@ -81,8 +81,11 @@ export default function Cart() {
                 </div>
               </div>
               </div>
-              
+              <Link to="/emptycart">
               <Button variant="danger" onClick={() => dispatch(clear())} className="m-3">Clear Chart</Button>
+
+              </Link>
+              
             
 
             </div>

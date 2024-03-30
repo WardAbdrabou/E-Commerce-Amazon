@@ -23,7 +23,7 @@ input::placeholder{
 form{
     border-top: 3px solid var(--quantity-box);
     border-bottom: 3px solid var(--quantity-box);
-    padding: 40px 840px;
+    padding: 40px 580px;
 }
 .register button , .CardButton  {
     outline: none;

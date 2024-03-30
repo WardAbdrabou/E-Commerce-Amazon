@@ -92,7 +92,27 @@ export default function Cart() {
           </div>
         </div>
       </section>
-      
+      <div className="parent mt-0" style={{marginTop7t:"100px"}}>
+                <div className="register login">
+                    <form  className="">
+                        <div>
+                            <div>
+                                
+                                <p className="pAcount mb-3" >See Personalised Recommendations
+                                </p>
+                            </div>
+                            <div style={{ textAlign: "center", marginBottom:"10px" }}>
+                                <Link to="/login"><button type="submit">Sign In</button>
+                                </Link>
+                            </div>
+                            <p className="pAcount mb-3" >New Customer
+                                    <a href="/register" style={{ color: "#7AB2F3", marginLeft: "5px"  }}>Start here</a>
+                                </p>
+
+                        </div>
+                    </form>
+                </div>
+            </div>
       <Footer></Footer>
     </>
   )

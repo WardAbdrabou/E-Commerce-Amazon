@@ -1,6 +1,7 @@
 import NavBar from "./NavBar";
 import EMPTYCart from "../assets/emptyCart.png"
 import { Link } from "react-router-dom";
+import Footer from "./Footer";
 
 export default function EmptyCart() {
  
@@ -54,7 +55,7 @@ export default function EmptyCart() {
                     </form>
                 </div>
             </div>
-      
+      <Footer></Footer>
     </>
   )
 }

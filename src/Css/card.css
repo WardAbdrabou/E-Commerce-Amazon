@@ -1,0 +1,321 @@
+
+/* small */
+body{
+    /* background-color: #F0F2F2; */
+}
+:root{
+    --amazon-blue: #131921;
+    --amazon-light: #232F3E;
+    --amazon-yellow: #febd69;
+    --whiteText: #ffffff;
+    --lightText: #ccc;
+    --quantity-box: #F0F2F2;
+    --footerBottom: #131A22;
+    --main-transition:0.3s;
+}
+.container{
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+/* small */
+@media(min-width:768px){
+  .container{
+      width: 750px;
+  } 
+}
+/* Medium */
+@media(min-width:992px){
+  .container{
+      width: 970px;
+  } 
+}
+/* Large */
+@media(min-width:1200px){
+  .container{
+      width: 1170px;
+  } 
+}
+
+/* End Global Rule */
+/* Slider */
+.rsis-container .rsis-bullets .rsis-bullet {
+    position: relative;
+    background-color: blue; /* Change to your preferred color */
+    margin-right: 10px; /* Adjust spacing between bullets */
+    padding-left: 20px; /* Add space for the number */
+  }
+
+  .rsis-container .rsis-bullets .rsis-bullet::before {
+    content: attr(data-bullet-number); /* Display the bullet number */
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    color: white; /* Number color */
+  }
+
+/* Slider */
+/* SideBar */
+
+  /* Position and sizing of burger button */
+.bm-burger-button {
+    position: absolute;
+    width: 20px;
+    height: 16px;
+    left: 55px;
+    top: 80px;
+  }
+  
+  /* Color/shape of burger icon bars */
+  .bm-burger-bars {
+    background:#ffffff;
+  }
+  
+  /* Color/shape of burger icon bars on hover*/
+  .bm-burger-bars-hover {
+    background: white !important ;
+  }
+  /* Position and sizing of clickable cross button */
+  .bm-cross-button {
+    left: 310px;
+    background-color: white;
+
+  }
+  .bm-cross-button:hover {
+    background-color: red;
+  }
+  
+  /* Color/shape of close button cross */
+  .bm-cross {
+    background: black;
+  }
+  /*
+  Sidebar wrapper styles
+  Note: Beware of modifying this element as it can break the animations - you should not need to touch it in most cases
+  */
+  .bm-menu-wrap {
+    position: fixed;
+    left: 1px;
+    /* height: 100%; */
+  }
+  
+  /* General sidebar styles */
+  .bm-menu {
+    background: white;
+    /* padding: 2.5em 1.5em 0; */
+    font-size: 1.15em;
+  }  
+  /* Styling of overlay */
+  .bm-overlay {
+    background: rgba(0, 0, 0, 0.3);
+  }
+  /* Individual item */
+.bm-item {
+    display: inline-block;
+    margin-bottom: 10px;
+    text-align: left;
+    text-decoration: none;
+    color: #131921 !important;
+    transition: 0.2s;
+    padding: 0px 10px 0 ;
+  }
+  
+/* SideBar */
+/* Card Products */
+.cards{
+    padding-top: var(--main-padding-top);
+    padding-bottom: var(--main-padding-bottom);
+}
+
+.cards .con{
+    display: grid;
+    grid-template-columns: repeat(auto-fill , minmax(400px , 1fr));
+    gap: 32px;
+    margin-left: 30px;
+    margin-right: 30px;
+
+}
+
+.card-flex{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: -15px;
+}
+.cards .box{
+  box-shadow: 0 2px 15px rgb(0 0 0 / 10%);
+    background-color: white;
+    overflow: hidden;
+    /* width: 350px; */
+}
+.cards .box img{
+    max-width: 100%;
+    height: 350px;
+    margin-top: 30px;
+}
+.img-product{
+    text-align: center;
+}
+.cards .box .content{
+    padding: 20px;
+}
+.cards .box .content h3{
+    margin: 0;
+}
+
+.cards .box .content p{
+    margin:  10px 0 0 ;
+    line-height: 1.5;
+    color: #777;
+
+}
+.cards .box .info{
+    padding: 10px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.CardButton{
+    text-align: center;
+    margin-bottom: 10px;
+}
+.cards .box .img-product {
+  overflow: hidden;
+  position: relative;
+}
+.cards .box .img-product:hover .caption {
+  bottom: 0px;
+}
+.cards .box .img-product img {
+  transition: 0.3s;
+}
+.cards .box .img-product .caption{
+  position: absolute;
+  left: 0;
+  padding: 20px;
+  background-color: #F0F2F2;
+  width: 100%;
+  transition: 0.3s;
+  bottom: -60%;
+}
+.detail-product{
+  border-bottom: 1px solid black;
+}
+
+.cards .box .img-product .caption h4 {
+  font-weight: normal;
+  margin-bottom: 10px;
+}
+
+.cards .box .img-product .caption p {
+  color: var(--main-color);
+  font-weight: bold;
+  margin-bottom: 0px;
+  margin-top: 10px;
+}
+
+/* Cart */
+.cart{
+    position: relative;
+    display: flex;
+  
+}
+.cart-number::before{
+    content: "";
+    position: absolute;
+    background-color: var(--amazon-yellow);
+    border-radius: 50%;
+    width:20px ;
+    height: 20px;
+    right: 23px ;
+    top: -7px;
+}
+.cart-numb{
+    position: absolute;
+    top: -7px;
+    right: 29px;
+    color: black;
+    font-weight: bold;
+}
+/* Card Products */
+
+/* Suitable plant page */
+
+.search{
+    width:  1350px;
+    margin-left: -22px;
+    border-radius: 5px;
+    margin-bottom: 60px;
+}
+.btn-search ,.btn-search:hover,.btn-search{
+  background-color: #febd69;
+}
+
+/*start Footer */
+.headerFooter{
+  background-color: #232f3f;
+}
+.footer .contain {
+    padding-left: 300px;
+    padding-right: 300px;
+}
+.footer .contain {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 40px;
+}
+.footer .contain  .box h3 , h6{
+  font-weight: bold;
+  color: white;
+}
+
+.footer .box .links{
+  list-style-type: none;
+}
+.footer .box .links li{
+  padding: 15px 0;
+}
+
+.footer .box .links li a{
+  color: #a7ada8;
+  text-decoration: none;
+}
+.footer .box .links li a:hover{
+  transition: var(--main-transition);
+  border-bottom: 1px solid #a7ada8;
+}
+.footer .copyright{
+  padding: 25px 0;
+  text-align: center;
+  color: white;
+  margin: 50px 0 0 ;
+  border-top: 1px solid #444;
+  border-bottom: 1px solid #444;
+}
+@media(max-width:767px){
+  .footer{
+      text-align: center;
+  }
+  .footer .box .social{
+      display: flex;
+      justify-content: center;
+  }
+  .footer .box .line {
+      display: flex;
+      flex-direction: column;
+  }
+  .footer .box .line i{
+      margin-bottom: 10px;
+  }
+}
+.bottomFooter{
+  background-color: #131a22 !important;
+}
+.bottomFooter p{
+  color: #a7ada8;
+
+}
+/*End Footer */

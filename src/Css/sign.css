@@ -1,0 +1,89 @@
+/* SignUp */
+input {
+    padding: 10px 20px;
+    width: 100%;
+    outline: none;
+    border: 1px solid rgba(102,102,102 , 35%);
+    border-radius: 10px;
+    transition: 0.3s;
+    margin-bottom: 10px;
+    text-decoration: none;
+
+}
+label{
+    margin-bottom: 5px;
+}
+input:focus{
+    border: 1px solid #6F9A61;
+}
+input::placeholder{
+    color: rgba(0,0,0,0.3);
+}
+
+form{
+    border-top: 3px solid var(--quantity-box);
+    border-bottom: 3px solid var(--quantity-box);
+    padding: 40px 840px;
+}
+.register button , .CardButton  {
+    outline: none;
+    border: none;
+    padding: 10px 20px;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 5px;
+    background-color: var( --amazon-yellow);
+    text-decoration: none;
+    width:300px;
+}
+.login{
+    
+    display:flex;
+    align-items: center;
+    justify-content:center;
+    height:80vh;
+    margin-top: -90px;
+}
+.form-login{
+    border: 3px solid var(--quantity-box);
+
+    padding: 50px;
+
+}
+.newtoAmazon{
+    text-align: center;
+    position: relative;
+}
+.newtoAmazon::before{
+    content: "";
+    position: absolute;
+    border-top: 1px solid black;
+    width: 250px;
+    top:50% ;
+    right:54%;
+}
+.newtoAmazon::after{
+    content: "";
+    position: absolute;
+    border-top: 1px solid black;
+    width: 250px;
+    top:50% ;
+    left:54%;
+}
+.newtoAmazon{
+    text-align: center;
+    margin-top: -80px;
+}
+.creatAccount{
+    border: 1px solid #ccc;
+    padding: 10px 20px;
+    color: black;
+    cursor: pointer;
+    border-radius: 5px;
+    background-color: var(--quantity-box);
+    text-decoration: none;
+    width:680px;
+    font-weight: bold;
+
+}
